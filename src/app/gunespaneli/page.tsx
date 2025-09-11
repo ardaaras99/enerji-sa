@@ -1,24 +1,19 @@
 'use client';
 
-import React from 'react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import SolarPhotoSwiper from '@/components/solar/SolarPhotoSwiper';
-import SolarTypesSection from '@/components/solar/SolarTypesSection';
+import Navbar from '@/components/Navbar';
+import SolarPanelShowcase from '@/components/solar/SolarPanelShowcase';
 
 export default function GunesPaneliPage() {
   return (
-    <div className="relative   min-h-screen">
+    <div className="relative min-h-screen">
       <Navbar />
-      
-      <main className="">
-        {/* Photo Swiper Section with Integrated Info */}
-        <SolarPhotoSwiper />
 
-        {/* Solar Types & Description */}
-        <SolarTypesSection />
+      <main className="pt-20">
+        {/* Solar Panel Product Showcase */}
+        <SolarPanelShowcase />
       </main>
-      
+
       <Footer />
     </div>
   );

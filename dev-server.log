@@ -1,0 +1,29 @@
+
+> enerji@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting C:\Users\salih\package-lock.json.
+   Consider removing the lockfiles at:
+   * C:\Users\salih\Desktop\tekinpowerocemre\tekin-power\package-lock.json
+
+   ▲ Next.js 15.4.10 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.58:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 2s
+ ○ Compiling / ...
+ ✓ Compiled / in 4s
+ GET / 200 in 4773ms
+ GET / 200 in 200ms
+ GET / 200 in 201ms
+ GET / 200 in 219ms
+ GET / 200 in 227ms
+ GET / 200 in 219ms
+ GET / 200 in 224ms
+ GET / 200 in 217ms

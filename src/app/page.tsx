@@ -7,12 +7,16 @@ import Navbar from '@/components/Navbar';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSectionHomepage';
 import SolarSection from '@/components/SolarSection';
+import DewJetAnnouncementModal from '@/components/DewJetAnnouncementModal';
 
 export default function Home() {
   return (
     <div className="relative">
       {/* Navigation */}
       <Navbar />
+      
+      {/* DewJet Announcement Modal */}
+      <DewJetAnnouncementModal />
       
       {/* Main Content */}
       <main>

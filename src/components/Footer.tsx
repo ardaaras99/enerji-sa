@@ -132,23 +132,30 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-blue-200 text-sm">
-                    Teknokent İstanbul<br />
-                    Kurtköy / İstanbul, Türkiye
+                    <strong>Satış:</strong> Koza Cad. No:66/64<br />
+                    Çankaya/Ankara<br />
+                    <strong>Depo:</strong> Perpa Ticaret Merkezi A Blok Kat:8<br />
+                    No:823-825 Şişli/İstanbul
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="tel:+902125550123" className="text-blue-200 hover:text-white transition-colors duration-300">
-                  +90 (212) 555 0123
-                </a>
+              <div className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                <div>
+                  <a href="tel:+905323276293" className="text-blue-200 hover:text-white transition-colors duration-300 block">
+                    +90 (532) 327 62 93
+                  </a>
+                  <a href="tel:+905056853393" className="text-blue-200 hover:text-white transition-colors duration-300 block">
+                    +90 (505) 685 33 93
+                  </a>
+                </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="mailto:info@tekinpower.com.tr" className="text-blue-200 hover:text-white transition-colors duration-300">
-                  info@tekinpower.com.tr
+                <a href="mailto:info@tekinpower.com?subject=Tekin Power İletişim&body=Merhaba, bilgi almak istiyorum." className="text-blue-200 hover:text-white transition-colors duration-300">
+                  info@tekinpower.com
                 </a>
               </div>
             </div>

@@ -1,0 +1,20 @@
+
+> enerji@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting C:\Users\salih\package-lock.json.
+   Consider removing the lockfiles at:
+   * C:\Users\salih\Desktop\tekinpowerocemre\tekin-power\package-lock.json
+
+ ⚠ Port 3000 is in use by process 9196, using available port 3001 instead.
+   ▲ Next.js 15.4.10 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.58:3001
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 1853ms

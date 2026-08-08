@@ -306,6 +306,8 @@ const PhotoSwiper = () => {
               fill
               className="object-cover blur-2xl scale-110 transition-all duration-1000"
               sizes="100vw"
+              loading="lazy"
+              quality={50}
             />
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
@@ -371,6 +373,8 @@ const PhotoSwiper = () => {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 80vw"
                     priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    quality={85}
                   />
 
                   {/* Overlay */}

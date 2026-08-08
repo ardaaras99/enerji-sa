@@ -127,20 +127,26 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: 'Telefon',
-      info: '+90 (212) 555 0123',
-      subInfo: 'Hafta içi 09:00 - 18:00'
+      info: '+90 (532) 327 62 93',
+      subInfo: '+90 (505) 685 33 93'
     },
     {
       icon: Mail,
       title: 'E-posta',
-      info: 'info@tekinpower.com.tr',
-      subInfo: 'Teklifler için'
+      info: 'info@tekinpower.com',
+      subInfo: 'Teklifler ve bilgi için'
     },
     {
       icon: MapPin,
-      title: 'Adres',
-      info: 'Teknokent İstanbul',
-      subInfo: 'Kurtköy / İstanbul'
+      title: 'Adres - Satış',
+      info: 'Koza Cad. No:66/64',
+      subInfo: 'Çankaya/Ankara'
+    },
+    {
+      icon: MapPin,
+      title: 'Adres - Depo',
+      info: 'Perpa Ticaret Merkezi A Blok Kat:8',
+      subInfo: 'No:823-825 Şişli/İstanbul'
     },
     {
       icon: Clock,
@@ -198,7 +204,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-800 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
                     placeholder="Adınız ve soyadınız"
                   />
                 </div>
@@ -213,7 +219,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-800 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
                     placeholder="ornek@email.com"
                   />
                 </div>
@@ -231,7 +237,7 @@ const ContactSection = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-800 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
                     placeholder="+90 (5xx) xxx xx xx"
                   />
                 </div>
@@ -245,7 +251,7 @@ const ContactSection = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-800 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
                     placeholder="Şirket adı"
                   />
                 </div>
@@ -285,7 +291,7 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-vertical"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-800 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-vertical placeholder:text-gray-400"
                   placeholder="Projeniz hakkında detaylar, güç ihtiyacınız, beklentileriniz..."
                 />
               </div>
@@ -368,14 +374,20 @@ const ContactSection = () => {
                 Acil durumlar için 7/24 teknik destek hattımızı arayabilirsiniz.
               </p>
               <div className="space-y-3">
-                <button className="w-full bg-white/20 backdrop-blur-lg border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2">
+                <a 
+                  href="tel:+905323276293"
+                  className="w-full bg-white/20 backdrop-blur-lg border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2"
+                >
                   <Phone className="w-5 h-5" />
                   <span>Hemen Ara</span>
-                </button>
-                <button className="w-full bg-white/20 backdrop-blur-lg border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2">
+                </a>
+                <a 
+                  href="mailto:info@tekinpower.com?subject=Tekin Power İletişim&body=Merhaba, bilgi almak istiyorum."
+                  className="w-full bg-white/20 backdrop-blur-lg border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center space-x-2"
+                >
                   <Mail className="w-5 h-5" />
                   <span>E-posta Gönder</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
